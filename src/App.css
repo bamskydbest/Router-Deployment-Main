@@ -1,0 +1,45 @@
+h1 {
+  color: #ffa725;
+  font-family: cursive;
+}
+p {
+  color: #c1d8c3;
+  font-family: monospace;
+}
+
+.btn {
+  text-decoration: none;
+  margin: 100px;
+  background-color: #fff5e4;
+  padding: 6px;
+  border-radius: 0.5rem;
+  color: #000;
+}
+.btn:hover {
+  color: #ffa725;
+  background-color: #c1d8c3;
+}
+form {
+  padding: 30px;
+}
+input[type] {
+  width: 95%;
+  margin: 15px;
+  padding: 20px;
+}
+input[placeholder] {
+  font-weight: 900;
+  font-size: 16px;
+}
+button[type="submit"] {
+  display: block;
+  margin: auto;
+  padding: 20px;
+  color: #ffa725;
+  background-color: #c1d8c3;
+  border: none;
+  border-radius: 0.5rem;
+}
+button[type="submit"]:hover {
+  background-color: #fff5e4;
+}
