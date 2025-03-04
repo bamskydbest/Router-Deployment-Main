@@ -54,13 +54,14 @@ const ContactUs = () => {
         can help you achieve your dreams.
       </p>
 
-      <form onSubmit={handleBtn}>
+      <form action="https://formspree.io/f/movjgzrr" method="POST">
         <div className="">
           {" "}
           <label htmlFor="name">Name</label>
           <input
             type="text"
             id="name"
+            name="name"
             required
             value={name}
             onChange={(e) => setName(e.target.value)}
@@ -72,6 +73,7 @@ const ContactUs = () => {
           <input
             type="email"
             id="email"
+            name="email"
             required
             value={email}
             onChange={(e) => setEmail(e.target.value)}
@@ -83,6 +85,7 @@ const ContactUs = () => {
           <input
             type="text"
             id="subject"
+            name="subject"
             placeholder="Inquiry for ?"
             required
             value={subject}
@@ -95,6 +98,7 @@ const ContactUs = () => {
           <input
             type="textarea"
             id="message"
+            name="message"
             required
             value={message}
             onChange={(e) => setMessage(e.target.value)}
