@@ -14,6 +14,9 @@ const Nav = () => {
         <Link to="/contact-us" className="btn">
           Contact Page
         </Link>
+        <Link to="/responsiveness" className="btn">
+          Responsiveness Page
+        </Link>
       </nav>
     </div>
   );

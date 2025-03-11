@@ -43,3 +43,38 @@ button[type="submit"] {
 button[type="submit"]:hover {
   background-color: #fff5e4;
 }
+
+@media (min-width: 376px) and (max-width: 768px) {
+  .btn {
+    margin: 10px;
+    background-color: #fff5e4;
+    padding: 2px;
+    width: 30%;
+
+    display: block;
+  }
+}
+
+@media (max-width: 375px) {
+  .btn {
+    margin: 10px;
+    background-color: #fff5e4;
+    padding: 2px;
+    width: 40%;
+
+    display: block;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .btn {
+    /* margin: 10px;
+    background-color: #fff5e4;
+    padding: 2px;
+    width: 40%;
+
+    display: block; */
+    white-space: nowrap;
+    /* margin: 80px; */
+  }
+}
