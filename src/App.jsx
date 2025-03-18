@@ -30,7 +30,7 @@ function App() {
         </Routes>
         <ParentComponent />
         <ExpensiveCalculationComponent />
-        <Pagination />
+        <Pagination itemsPerPage={4} />
       </Suspense>
     </>
   );

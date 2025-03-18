@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from "react";
-import ReactDOM from "react-dom";
+import React, { useState } from "react";
 import ReactPaginate from "react-paginate";
 
 // Example items, to simulate fetching from another resources.
@@ -10,8 +9,13 @@ function Items({ currentItems }) {
     <>
       {currentItems &&
         currentItems.map((item) => (
-          <div id="container">
-            <h3>Item #{item}</h3>
+          <div
+            id="container"
+            style={{
+              display: "flex",
+            }}
+          >
+            <h3 style={{ color: "red" }}>Item #{item}</h3>
           </div>
         ))}
     </>
@@ -42,8 +46,8 @@ function PaginatedItems({ itemsPerPage }) {
 
   return (
     <>
-      <Items currentItems={Items} />
-      {/* <ReactPaginate
+      <Items currentItems={currentItems} />
+      <ReactPaginate
         breakLabel="..."
         nextLabel="next >"
         onPageChange={handlePageClick}
@@ -51,7 +55,7 @@ function PaginatedItems({ itemsPerPage }) {
         pageCount={pageCount}
         previousLabel="< previous"
         renderOnZeroPageCount={null}
-      /> */}
+      />
     </>
   );
 }
